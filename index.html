@@ -4,132 +4,496 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Zone | Gym & Fitness</title>
+
+    <title>Elite Fitness Club | Transform Your Body</title>
+
+    <meta name="description" content="Join Elite Fitness Club for strength training, cardio, personal training and premium fitness facilities.">
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-<header>
-    <nav class="navbar">
-        <h2 class="logo">FITNESS<span>ZONE</span></h2>
+<!-- NAVBAR -->
+<header class="header">
+    <nav class="navbar container">
 
-        <ul id="menu">
+        <a href="#home" class="logo">
+            ELITE<span>FITNESS</span>
+            <small>CLUB</small>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#plans">Plans</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#plans">Membership</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <a href="#plans" class="nav-btn">JOIN NOW</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
     </nav>
 </header>
 
+
+<!-- HERO SECTION -->
 <section class="hero" id="home">
-    <div class="hero-content">
-        <h3>WELCOME TO FITNESS ZONE</h3>
-        <h1>BUILD YOUR BODY<br>
-        <span>TRANSFORM YOUR LIFE</span></h1>
-        <p>Your fitness journey starts here. Train hard, stay strong!</p>
-        <a href="#plans" class="btn">JOIN NOW</a>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content reveal">
+
+        <p class="hero-tag">
+            <span></span> WELCOME TO ELITE FITNESS CLUB
+        </p>
+
+        <h1>
+            PUSH YOUR<br>
+            <span>LIMITS.</span><br>
+            BUILD YOUR LEGACY.
+        </h1>
+
+        <p class="hero-description">
+            Strong body. Strong mind. Stronger you.
+            Start your fitness journey with expert trainers
+            and world-class gym facilities.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#plans" class="btn-primary">JOIN OUR GYM <i class="fas fa-arrow-right"></i></a>
+            <a href="#about" class="btn-outline">EXPLORE MORE</a>
+        </div>
+
     </div>
-</section>
 
-<section class="about" id="about">
-    <h2>ABOUT <span>US</span></h2>
-    <p>
-        Fitness Zone is your destination for a healthy and active lifestyle.
-        We provide modern gym equipment, expert trainers and personalized
-        workout programs to help you achieve your fitness goals.
-    </p>
-</section>
-
-<section class="services" id="services">
-    <h2>OUR <span>SERVICES</span></h2>
-
-    <div class="service-container">
-        <div class="service-card">
-            <h3>🏋️ Weight Training</h3>
-            <p>Build strength and muscles with professional equipment.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>🏃 Cardio Training</h3>
-            <p>Improve stamina, heart health and overall fitness.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>💪 Personal Training</h3>
-            <p>Get personalized guidance from experienced trainers.</p>
-        </div>
-
-        <div class="service-card">
-            <h3>🥗 Diet Planning</h3>
-            <p>Follow healthy nutrition plans for better results.</p>
-        </div>
+    <div class="hero-bottom">
+        <span>NO EXCUSES. JUST RESULTS.</span>
+        <span>EST. 2026</span>
     </div>
+
 </section>
 
-<section class="plans" id="plans">
-    <h2>MEMBERSHIP <span>PLANS</span></h2>
 
-    <div class="plan-container">
-        <div class="plan-card">
-            <h3>Basic</h3>
-            <h2>₹999 <small>/Month</small></h2>
-            <p>Gym Access</p>
-            <p>Basic Equipment</p>
-            <p>Locker Facility</p>
-            <a href="#contact" class="btn">Choose Plan</a>
-        </div>
+<!-- STATS -->
+<section class="stats container">
 
-        <div class="plan-card featured">
-            <h3>Standard</h3>
-            <h2>₹1999 <small>/Month</small></h2>
-            <p>Full Gym Access</p>
-            <p>Cardio Training</p>
-            <p>Diet Guidance</p>
-            <a href="#contact" class="btn">Choose Plan</a>
-        </div>
-
-        <div class="plan-card">
-            <h3>Premium</h3>
-            <h2>₹2999 <small>/Month</small></h2>
-            <p>All Gym Facilities</p>
-            <p>Personal Trainer</p>
-            <p>Diet Planning</p>
-            <a href="#contact" class="btn">Choose Plan</a>
-        </div>
+    <div class="stat-box">
+        <h2>500<span>+</span></h2>
+        <p>HAPPY MEMBERS</p>
     </div>
-</section>
 
-<section class="trainers">
-    <h2>OUR <span>TRAINERS</span></h2>
-    <div class="trainer-box">
-        <h3>Professional Fitness Trainers</h3>
-        <p>Get expert support and motivation throughout your fitness journey.</p>
+    <div class="stat-box">
+        <h2>10<span>+</span></h2>
+        <p>EXPERT TRAINERS</p>
     </div>
+
+    <div class="stat-box">
+        <h2>25<span>+</span></h2>
+        <p>FITNESS PROGRAMS</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>100<span>%</span></h2>
+        <p>DEDICATION</p>
+    </div>
+
 </section>
 
-<section class="contact" id="contact">
-    <h2>CONTACT <span>US</span></h2>
 
-    <form id="contactForm">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="tel" placeholder="Your Phone Number" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">SEND MESSAGE</button>
-    </form>
-    <p id="formMessage"></p>
+<!-- ABOUT -->
+<section class="about section-padding" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-image reveal">
+            <img
+                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=85"
+                alt="Premium gym interior">
+
+            <div class="experience-box">
+                <h2>YOUR</h2>
+                <p>FITNESS JOURNEY STARTS HERE</p>
+            </div>
+        </div>
+
+        <div class="about-content reveal">
+
+            <p class="section-label">ABOUT OUR CLUB</p>
+
+            <h2 class="section-title">
+                MORE THAN A GYM.<br>
+                <span>A LIFESTYLE.</span>
+            </h2>
+
+            <p>
+                Welcome to Elite Fitness Club, where fitness meets
+                excellence. We provide a motivating environment,
+                modern equipment and expert guidance to help you
+                become the strongest version of yourself.
+            </p>
+
+            <p>
+                Whether your goal is muscle building, weight loss,
+                strength training or a healthier lifestyle,
+                we are here to support you at every step.
+            </p>
+
+            <div class="about-features">
+                <p><i class="fas fa-check-circle"></i> Modern Gym Equipment</p>
+                <p><i class="fas fa-check-circle"></i> Certified Trainers</p>
+                <p><i class="fas fa-check-circle"></i> Personalized Workout Plans</p>
+                <p><i class="fas fa-check-circle"></i> Friendly Fitness Environment</p>
+            </div>
+
+            <a href="#contact" class="btn-primary">KNOW MORE</a>
+
+        </div>
+
+    </div>
+
 </section>
 
-<footer>
-    <h2>FITNESS<span>ZONE</span></h2>
-    <p>Transform Your Body, Transform Your Life.</p>
-    <p>© 2026 Fitness Zone. All Rights Reserved.</p>
+
+<!-- SERVICES -->
+<section class="services section-padding" id="services">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <p class="section-label">WHAT WE OFFER</p>
+            <h2 class="section-title">OUR <span>SERVICES</span></h2>
+            <p>Everything you need to achieve your fitness goals.</p>
+        </div>
+
+        <div class="service-grid">
+
+            <div class="service-card reveal">
+                <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=700&q=80" alt="Strength training">
+                <div class="service-info">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>STRENGTH TRAINING</h3>
+                    <p>Build muscles, increase strength and improve performance.</p>
+                </div>
+            </div>
+
+            <div class="service-card reveal">
+                <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=700&q=80" alt="Cardio workout">
+                <div class="service-info">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>CARDIO TRAINING</h3>
+                    <p>Improve stamina, endurance and cardiovascular fitness.</p>
+                </div>
+            </div>
+
+            <div class="service-card reveal">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&q=80" alt="Personal training">
+                <div class="service-info">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>PERSONAL TRAINING</h3>
+                    <p>Get expert one-to-one guidance for your fitness journey.</p>
+                </div>
+            </div>
+
+            <div class="service-card reveal">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=700&q=80" alt="Fitness workout">
+                <div class="service-info">
+                    <i class="fas fa-fire"></i>
+                    <h3>FAT LOSS PROGRAM</h3>
+                    <p>Work towards a healthier body with structured workouts.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section class="why-us section-padding">
+
+    <div class="container why-grid">
+
+        <div class="why-content reveal">
+
+            <p class="section-label">WHY CHOOSE US</p>
+
+            <h2 class="section-title">
+                TRAIN HARDER.<br>
+                <span>GET STRONGER.</span>
+            </h2>
+
+            <p>
+                We believe fitness is not just about lifting weights.
+                It is about discipline, confidence and becoming better
+                every single day.
+            </p>
+
+            <div class="why-item">
+                <i class="fas fa-dumbbell"></i>
+                <div>
+                    <h3>PREMIUM EQUIPMENT</h3>
+                    <p>Modern equipment for an effective workout.</p>
+                </div>
+            </div>
+
+            <div class="why-item">
+                <i class="fas fa-users"></i>
+                <div>
+                    <h3>EXPERT TRAINERS</h3>
+                    <p>Professional support and workout guidance.</p>
+                </div>
+            </div>
+
+            <div class="why-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <h3>FLEXIBLE TIMINGS</h3>
+                    <p>Workout schedules to fit your daily routine.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="why-image reveal">
+            <img src="https://images.unsplash.com/photo-1534368270820-9de3d8053204?auto=format&fit=crop&w=1000&q=85" alt="Athlete training in gym">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TRAINERS -->
+<section class="trainers section-padding" id="trainers">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <p class="section-label">MEET THE TEAM</p>
+            <h2 class="section-title">EXPERT <span>TRAINERS</span></h2>
+            <p>Get inspired and guided by fitness professionals.</p>
+        </div>
+
+        <div class="trainer-grid">
+
+            <div class="trainer-card reveal">
+                <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=700&q=80" alt="Fitness trainer">
+                <div class="trainer-info">
+                    <h3>FITNESS TRAINER</h3>
+                    <p>Strength & Conditioning</p>
+                </div>
+            </div>
+
+            <div class="trainer-card reveal">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=700&q=80" alt="Personal fitness coach">
+                <div class="trainer-info">
+                    <h3>PERSONAL COACH</h3>
+                    <p>Workout Guidance</p>
+                </div>
+            </div>
+
+            <div class="trainer-card reveal">
+                <img src="https://images.unsplash.com/photo-1549476464-37392f717541?auto=format&fit=crop&w=700&q=80" alt="Fitness coach">
+                <div class="trainer-info">
+                    <h3>FITNESS COACH</h3>
+                    <p>Weight Management</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRICING -->
+<section class="pricing section-padding" id="plans">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <p class="section-label">CHOOSE YOUR PLAN</p>
+            <h2 class="section-title">MEMBERSHIP <span>PLANS</span></h2>
+            <p>Invest in yourself. Your fitness journey starts today.</p>
+        </div>
+
+        <div class="pricing-grid">
+
+            <div class="price-card reveal">
+                <h3>BASIC</h3>
+                <h2>₹999 <small>/ month</small></h2>
+                <p>Gym Access</p>
+                <p>Basic Equipment</p>
+                <p>Locker Facility</p>
+                <p>General Workout Plan</p>
+                <a href="#contact" class="btn-outline">GET STARTED</a>
+            </div>
+
+            <div class="price-card popular reveal">
+                <div class="popular-tag">MOST POPULAR</div>
+                <h3>STANDARD</h3>
+                <h2>₹1,999 <small>/ month</small></h2>
+                <p>Full Gym Access</p>
+                <p>Cardio & Strength Training</p>
+                <p>Trainer Guidance</p>
+                <p>Diet Guidance</p>
+                <a href="#contact" class="btn-primary">JOIN NOW</a>
+            </div>
+
+            <div class="price-card reveal">
+                <h3>PREMIUM</h3>
+                <h2>₹2,999 <small>/ month</small></h2>
+                <p>All Gym Facilities</p>
+                <p>Personal Trainer</p>
+                <p>Customized Workout</p>
+                <p>Diet Planning</p>
+                <a href="#contact" class="btn-outline">GET STARTED</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CALL TO ACTION -->
+<section class="cta">
+
+    <div class="container cta-content reveal">
+        <p class="section-label">YOUR TIME IS NOW</p>
+        <h2>DON'T WISH FOR IT.<br><span>WORK FOR IT.</span></h2>
+        <a href="#contact" class="btn-primary">START YOUR JOURNEY</a>
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact section-padding" id="contact">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <p class="section-label">GET IN TOUCH</p>
+            <h2 class="section-title">CONTACT <span>US</span></h2>
+            <p>Have questions? We are ready to help you.</p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-details">
+
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>OUR LOCATION</h3>
+                        <p>Your Gym Address, Your City</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>PHONE NUMBER</h3>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>EMAIL ADDRESS</h3>
+                        <p>elitefitness@example.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>OPENING HOURS</h3>
+                        <p>Monday - Saturday: 5 AM - 10 PM</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <form class="contact-form" id="contactForm">
+
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Your Email" required>
+
+                <input type="tel" placeholder="Phone Number" required>
+
+                <select required>
+                    <option value="">Select Membership Plan</option>
+                    <option>Basic</option>
+                    <option>Standard</option>
+                    <option>Premium</option>
+                </select>
+
+                <textarea placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="btn-primary">
+                    SEND MESSAGE <i class="fas fa-paper-plane"></i>
+                </button>
+
+                <p id="formMessage"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <div>
+            <a href="#home" class="logo">
+                ELITE<span>FITNESS</span>
+                <small>CLUB</small>
+            </a>
+            <p>Build strength. Build confidence. Build your legacy.</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Elite Fitness Club. All Rights Reserved.
+    </div>
+
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
